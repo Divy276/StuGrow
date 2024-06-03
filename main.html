@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuGrow Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+</head>
+<body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+        project-id="stugrow"
+        agent-id="ade1e20d-4821-4490-b2de-5ec1d7a7aa29"
+        language-code="en"
+        max-query-length="-1">
+        <df-messenger-chat chat-title="StuGrow"></df-messenger-chat>
+    </df-messenger>
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-bot-message: #fff;
+            --df-messenger-button-titlebar-color: #4285f4;
+            --df-messenger-chat-background-color: #f3f6fc;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: "Roboto", sans-serif;
+            --df-messenger-send-icon: #4285f4;
+            --df-messenger-user-message: #d3e3fd;
+            bottom: 20px;
+            right: 20px;
+            width: 1300px;
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
